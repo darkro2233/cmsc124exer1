@@ -19,4 +19,11 @@
         
         MENU.
             DISPLAY "MENU".
-            DISPLAY "1."
+            DISPLAY "1. ADD STUDENT". 
+            DISPLAY "2. EDIT STUDENT INFO".
+            DISPLAY "3. DELETE STUDENT".
+            DISPLAY "4. VIEW STUDENT".
+            DISPLAY "5. VIEW ALL STUDENTS".
+            DISPLAY "6. EXIT".
+            DISPLAY "CHOICE" WITH NO ADVANCING.
+            ACCEPT MENUCHOICE.
