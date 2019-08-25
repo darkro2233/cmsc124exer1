@@ -15,7 +15,7 @@
            77 CTR PIC 9.
            77 MENUCHOICE PIC 9.
            77 STUDCOUNT PIC 9 VALUE 0.
-           77 EDITSTUDNO PIC 9.
+           77 STUDNOCHOICE PIC 9.
 
 
        PROCEDURE DIVISION.
@@ -45,6 +45,23 @@
                        ACCEPT landline(STUDCOUNT)
                        ACCEPT age(STUDCOUNT)
                        DISPLAY "DONE"
+                       DISPLAY STUDCOUNT
+                   WHEN 2
+                       IF STUDCOUNT = 0
+                           DISPLAY "CAN'T ADD. NO STUDENTS IN DIRECTORY"
+                       ELSE
+                       DISPLAY "1."sno(1)
+                       DISPLAY "2."sno(2)
+                       DISPLAY "3."sno(3)
+                       DISPLAY "4."sno(4)
+                       DISPLAY "5."sno(5)
+                       DISPLAY "WHAT TO EDIT (1-5): "
+                       ACCEPT STUDNOCHOICE
+                           ACCEPT course(STUDNOCHOICE)
+                           ACCEPT mobile(STUDNOCHOICE)
+                           ACCEPT landline(STUDNOCHOICE)
+                           ACCEPT age(STUDNOCHOICE)
+                           DISPLAY "EDITED"                       
+                       END-IF
+                           
                END-EVALUATE.
-
- 
