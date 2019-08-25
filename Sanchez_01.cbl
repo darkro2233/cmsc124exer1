@@ -12,10 +12,12 @@
     		            04 mobile PIC X(11).
     		 	        04 landline PIC X(8).
     		        03 age PIC 99.
-           77 CTR PIC 9.
+           77 CTR PIC 9 VALUE 0.
            77 MENUCHOICE PIC 9.
            77 STUDCOUNT PIC 9 VALUE 0.
-           77 EDITSTUDNO PIC 9.
+           77 STUDNOINPUT PIC X(30).
+           77 SCANCTR PIC 9.
+           77 YES PIC 9.
 
 
        PROCEDURE DIVISION.
@@ -45,6 +47,22 @@
                        ACCEPT landline(STUDCOUNT)
                        ACCEPT age(STUDCOUNT)
                        DISPLAY "DONE"
-               END-EVALUATE.
-
- 
+                    WHEN 2
+                        DISPLAY "STUDENT NO: " WITH NO ADVANCING
+                        ACCEPT STUDNOINPUT
+                        PERFORM SCAN
+                        END-PERFORM
+                END-EVALUATE
+            
+            SCAN.
+                IF sno(1) = STUDNOINPUT
+                    MOVE 1 TO YES
+                ELSE
+                    PERFORM SCAN2
+                END-IF.
+            SCAN2.
+                IF sno(2) = STUDNOINPUT
+                    MOVE 1 TO YES
+                ELSE
+                    DISPLAY "NO"
+                END-IF.
