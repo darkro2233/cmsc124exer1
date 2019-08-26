@@ -100,4 +100,40 @@
                        DISPLAY "MOBILE NO: "mobile(STUDNOCHOICE)
                        DISPLAY "LANDLINE: "landline(STUDNOCHOICE)
                        DISPLAY "AGE: "age(STUDNOCHOICE)
+                   WHEN 5
+                       DISPLAY "STUDENT 1"
+                       DISPLAY "FULL NAME: "fullname(1)
+                       DISPLAY "STUDENT NO: "sno(1)
+                       DISPLAY "COURSE: "course(1)
+                       DISPLAY "MOBILE NO: "mobile(1)
+                       DISPLAY "LANDLINE: "landline(1)
+                       DISPLAY "AGE: "age(1)
+                       DISPLAY "STUDENT 2"
+                       DISPLAY "FULL NAME: "fullname(2)
+                       DISPLAY "STUDENT NO: "sno(2)
+                       DISPLAY "COURSE: "course(2)
+                       DISPLAY "MOBILE NO: "mobile(2)
+                       DISPLAY "LANDLINE: "landline(2)
+                       DISPLAY "AGE: "age(2)
+                       DISPLAY "STUDENT 3"
+                       DISPLAY "FULL NAME: "fullname(3)
+                       DISPLAY "STUDENT NO: "sno(3)
+                       DISPLAY "COURSE: "course(3)
+                       DISPLAY "MOBILE NO: "mobile(3)
+                       DISPLAY "LANDLINE: "landline(3)
+                       DISPLAY "AGE: "age(3)
+                       DISPLAY "STUDENT 4"
+                       DISPLAY "FULL NAME: "fullname(4)
+                       DISPLAY "STUDENT NO: "sno(4)
+                       DISPLAY "COURSE: "course(4)
+                       DISPLAY "MOBILE NO: "mobile(4)
+                       DISPLAY "LANDLINE: "landline(4)
+                       DISPLAY "AGE: "age(4)
+                       DISPLAY "STUDENT 5"
+                       DISPLAY "FULL NAME: "fullname(5)
+                       DISPLAY "STUDENT NO: "sno(5)
+                       DISPLAY "COURSE: "course(5)
+                       DISPLAY "MOBILE NO: "mobile(5)
+                       DISPLAY "LANDLINE: "landline(5)
+                       DISPLAY "AGE: "age(5)
                END-EVALUATE.
